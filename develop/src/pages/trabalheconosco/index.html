@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe conosco</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <h1>Trabalhe conosco</h1>
+
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/src/pages/sobre/index.html">Sobre</a>
+            <a href="/src/pages/contato/index.html">Contato</a>
+        </nav>
+
+        <form action="" id="jobForm">
+
+            <!--Dados Pessoais-->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="fullName">Nome Completo: </label>
+                    <input type="text" name="fullName" id="fullName" required 
+                    placeholder="Digite seu nome completo">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email"
+                    required placeholder="Digite seu e-mail">
+                </div>
+            
+            
+            <!-- Vaga de Interesse-->
+            
+            <fieldset>
+                <legend>Vaga de Interesse</legend>
+
+                <div>
+                    <label for="vaga" Selecione a vaga></label>
+                    <select name="vaga" id="vaga" required>
+                        <option value="" disabled selected>-- escolha uma opção --</option>
+                        <option value="frontend">Desenvolvedor Front-end</option>
+                        <option value="backend" >Desenvolvedor Back-end</option>
+                        <option value="uiux" >Design UI e UX</option>
+                        <option value="gerente" >Gerente de Projetos</option>
+                    </select>
+                </div>
+            </fieldset>
+        
+
+            <!-- Como soube da vaga-->
+            <fieldset>
+                        <legend>Como soube da vaga</legend>
+                        
+                        <div>
+                            <input type="checkbox" name="check-one" id="check-one" value="Likedin">
+                            <label for="check-one">Likedin</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="check-two" id="check-two" value="Site">
+                            <label for="check-two">Site da Empresa</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="check-three" id="check-three" value="Indicação">
+                            <label for="check-three">Indicação</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="check-four" id="check-four" vslue="outros">
+                            <label for="check-four">outros</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+        </form>
+        <script src="/src/scripts/script.js"></script>
+</body>
+</html>
